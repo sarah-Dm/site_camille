@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(70deg, #b6c0c8, black);
+}
+/*
+.##.....##.########....###....########..########.########.
+.##.....##.##.........##.##...##.....##.##.......##.....##
+.##.....##.##........##...##..##.....##.##.......##.....##
+.#########.######...##.....##.##.....##.######...########.
+.##.....##.##.......#########.##.....##.##.......##...##..
+.##.....##.##.......##.....##.##.....##.##.......##....##.
+.##.....##.########.##.....##.########..########.##.....##*/
+
+h2 {
+  width: fit-content;
+  align-self: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  text-shadow: 1px 1px rgb(20, 8, 8);
+}
+header {
+  background-image: url(https://thumbs.dreamstime.com/z/mod%C3%A8les-de-mode-croquis-23554712.jpg);
+  background-size: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-attachment: fixed;
+  color: rgb(5, 5, 5);
+}
+
+li {
+  list-style-type: none;
+  width: fit-content;
+  margin: 5px;
+  background-color: #36424c;
+  border-radius: 10px;
+  padding: 2px 7px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  /*justify-content: space-evenly;*/
+  flex-direction: column;
+  align-items: center;
+}
+/*
+  
+########  ########   #######  ########   #######   ######  
+##     ## ##     ## ##     ## ##     ## ##     ## ##    ## 
+##     ## ##     ## ##     ## ##     ## ##     ## ##       
+########  ########  ##     ## ########  ##     ##  ######  
+##        ##   ##   ##     ## ##        ##     ##       ## 
+##        ##    ##  ##     ## ##        ##     ## ##    ## 
+##        ##     ##  #######  ##         #######   ######  
+*/
+#a_propos {
+  position: relative;
+}
+
+#photo_mannequin {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  height: 60%;
+}
+
+.photo_a_propos {
+  width: 20%;
+  width: 20%;
+  height: 20%;
+  margin: 5px;
+}
+
+#a_propos {
+  display: flex;
+  align-items: center;
+  padding-right: 70px;
+  color: rgb(226, 221, 221);
+}
+
+#a_propos p {
+  text-align: justify;
+}
+/*
+
+########  #######   #######  ######## ######## ########  
+##       ##     ## ##     ##    ##    ##       ##     ## 
+##       ##     ## ##     ##    ##    ##       ##     ## 
+######   ##     ## ##     ##    ##    ######   ########  
+##       ##     ## ##     ##    ##    ##       ##   ##   
+##       ##     ## ##     ##    ##    ##       ##    ##  
+##        #######   #######     ##    ######## ##     ## 
+*/
+.logo_image {
+  width: 30px;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form div label {
+  margin-top: 0px;
+}
+
+form div input {
+  width: 50%;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+#links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#links div {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+button {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #36424c;
+  color: white;
+}
