@@ -1,9 +1,24 @@
 * {
   box-sizing: border-box;
+  margin-bottom: 10px;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: "Lora", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
-  background: linear-gradient(70deg, #b6c0c8, black);
+  background: linear-gradient(70deg, #242627, black);
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    margin: 55px;
+    margin-top: 0;
+  }
+}
+
+section {
+  text-align: center;
 }
 /*
 .##.....##.########....###....########..########.########.
@@ -17,37 +32,81 @@ body {
 h2 {
   width: fit-content;
   align-self: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: black;
+  border-radius: 3px;
+  margin: auto;
 }
 
 h1 {
-  text-shadow: 1px 1px rgb(20, 8, 8);
+  margin: 50px 20px;
+  text-shadow: 1px 7px 7px #0b101d;
+  color: rgb(246, 247, 248);
 }
-header {
-  background-image: url(https://thumbs.dreamstime.com/z/mod%C3%A8les-de-mode-croquis-23554712.jpg);
-  background-size: 100vw;
+
+#main_header {
+  background-image: url(planche_de_recherches.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   background-attachment: fixed;
   color: rgb(5, 5, 5);
+  position: relative;
+}
+
+#header_pages {
+  background-image: url(collection_cirque.png);
+  text-align: center;
 }
 
 li {
   list-style-type: none;
   width: fit-content;
-  margin: 5px;
+  margin: 25px;
   background-color: #36424c;
   border-radius: 10px;
-  padding: 2px 7px;
+  padding: 5px 10px;
   font-size: 18px;
+  position: sticky;
+}
+
+@media screen and (min-width: 900px) {
+  li {
+    margin: 30px;
+  }
+
+  header {
+    padding-bottom: 50vh;
+  }
+}
+
+li:first-child {
+  top: 0;
+}
+
+li:nth-child(2) {
+  top: 45px;
+}
+
+li:nth-child(3) {
+  top: 90px;
+}
+
+li:last-child {
+  top: 135px;
 }
 
 a {
   text-decoration: none;
   color: white;
+  font-size: 25px;
+}
+
+#nav_other_pages li {
+  margin: 5px;
 }
 
 ul {
@@ -56,6 +115,14 @@ ul {
   /*justify-content: space-evenly;*/
   flex-direction: column;
   align-items: center;
+  padding-left: 0px;
+}
+
+@media screen and (min-width: 900px) {
+  ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 /*
   
@@ -67,34 +134,45 @@ ul {
 ##        ##    ##  ##     ## ##        ##     ## ##    ## 
 ##        ##     ##  #######  ##         #######   ######  
 */
-#a_propos {
-  position: relative;
+#photo_jupe {
+  width: 50%;
 }
 
-#photo_mannequin {
-  position: absolute;
-  right: 0;
-  bottom: 50%;
-  height: 60%;
+@media screen and (min-width: 900px) {
+  #photo_jupe {
+    width: 20%;
+  }
 }
 
-.photo_a_propos {
-  width: 20%;
-  width: 20%;
-  height: 20%;
-  margin: 5px;
-}
-
-#a_propos {
-  display: flex;
-  align-items: center;
-  padding-right: 70px;
-  color: rgb(226, 221, 221);
+h3 {
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-align: left;
 }
 
 #a_propos p {
   text-align: justify;
+  margin-bottom: 90px;
+  color: white;
 }
+
+@media screen and (min-width: 900px) {
+  #a_propos {
+    display: flex;
+    align-items: center;
+  }
+
+  #photo_jupe {
+    width: 30%;
+  }
+}
+
+.next_part {
+  background: #ad2a0e;
+  width: px;
+}
+
 /*
 
 ########  #######   #######  ######## ######## ########  
@@ -105,6 +183,7 @@ ul {
 ##       ##     ## ##     ##    ##    ##       ##    ##  
 ##        #######   #######     ##    ######## ##     ## 
 */
+
 .logo_image {
   width: 30px;
   margin: 2px;
@@ -117,7 +196,8 @@ form div {
 }
 
 form div label {
-  margin-top: 0px;
+  margin-top: 25px;
+  color: white;
 }
 
 form div input {
@@ -135,12 +215,64 @@ form div input {
 #links div {
   display: flex;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: 40px;
 }
 
 button {
-  width: 50%;
+  width: 40%;
   border-radius: 5px;
   background-color: #36424c;
   color: white;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+textarea {
+  margin-bottom: 35px;
+  background-color: #36424c;
+  color: white;
+  padding: 0;
+}
+
+input {
+  color: white;
+  background-color: #36424c;
+}
+@media screen and (min-width: 900px) {
+  textarea {
+    width: 50%;
+  }
+  form {
+  }
+}
+
+/*
+ #######  ######## ##     ## ######## ########  
+##     ##    ##    ##     ## ##       ##     ## 
+##     ##    ##    ##     ## ##       ##     ## 
+##     ##    ##    ######### ######   ########  
+##     ##    ##    ##     ## ##       ##   ##   
+##     ##    ##    ##     ## ##       ##    ##  
+ #######     ##    ##     ## ######## ##     ## 
+*/
+
+#book,
+#inspiration,
+#dessin {
+  position: relative;
+}
+
+#book img,
+#inspiration img,
+#dessin img {
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  #book img,
+  #inspiration img, #dessin img {
+    position: sticky;
+    top: 0;
+    background: black;
+  }
 }

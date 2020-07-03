@@ -3,27 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Accueil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <!--Main page-->
   <body>
-    <header>
+    <header id="main_header">
       <h2>Camille Damag</h2>
       <h1>EMOTION. PASSION. IMAGINATION.</h1>
       <nav>
         <ul>
-          <li><a href="#Accueil">Accueil</a></li>
-          <li><a href="#Silhouette">Silhouette</a></li>
-          <li><a href="#Réalisation">Réalisation</a></li>
-          <li><a href="#Expériences">Expériences</a></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="silhouette.html">Silhouette</a></li>
+          <li><a href="inspiration.html">Inspiration</a></li>
+          <li><a href="dessin.html">Dessin</a></li>
         </ul>
       </nav>
     </header>
     <section>
       <h3>A propos</h3>
       <div id="a_propos">
-        <img class="photo_a_propos" src="Photo jupe.jpg" alt="photo_jupe" />
+        <img id="photo_jupe" src="Photo_jupe.jpg" alt="photo_jupe" />
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
           been the industry's standard dummy text ever since the 1500s, when an unknown printer took
@@ -33,8 +41,8 @@
           Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
           PageMaker including versions of Lorem Ipsum.
         </p>
-        <img class="photo_a_propos" id="photo_mannequin" src="Photo mannequin.png" alt="photo_mannequin" />
       </div>
+      <hr />
     </section>
     <footer>
       <h3>Contact</h3>
@@ -42,28 +50,28 @@
         <button>Demande de devis</button>
         <div>
           <a href="https://www.linkedin.com/in/camille-damag-20b315112/"
-            ><img class="logo_image" src="Logo Linkedin.png" alt="logo-linkedin"
+            ><img class="logo_image" src="Logo_Linkedin.png" alt="logo-linkedin"
           /></a>
-          <a href="XX"><img class="logo_image" src="Logo Pinterest.jpg" alt="" /></a>
+          <a href="XX"><img class="logo_image" src="Logo_Pinterest.jpg" alt="" /></a>
         </div>
       </section>
 
-      <form action="" id="Contact form">
+      <form action="get" id="Contact_form">
         <div>
           <label id="name-label" for="name">Nom</label>
-          <input type="text" id="name" name="" placeholder="Votre nom" />
+          <input type="text" id="name" name="contact" placeholder="Votre nom" />
         </div>
 
         <div>
           <label id="email-label" for="email">Email</label>
-          <input type="email" id="email" name="" placeholder="Votre email" />
+          <input type="email" id="email" name="contact" placeholder="Votre email" />
         </div>
         <div>
-          <label id="message-label" for="Message">Message</label>
-          <textarea name="" id="message" cols="30" rows="10" ></textarea>
+          <label id="message-label" for="">Message</label>
+          <textarea name="contact" id="message" cols="30" rows="5" placeholder="Votre message">
           </textarea>
         </div>
-        <input type="submit" id="" name="" value="Envoyer" />
+        <input type="submit" id="submit_button" name="contact" value="Envoyer" />
       </form>
     </footer>
 
