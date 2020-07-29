@@ -38,6 +38,7 @@ h2 {
   background-color: black;
   border-radius: 3px;
   margin: auto;
+  margin-top: 10px;
 }
 
 h1 {
@@ -71,6 +72,18 @@ li {
   padding: 5px 10px;
   font-size: 18px;
   position: sticky;
+}
+
+li:target {
+  background-color: rgba(32, 12, 49, 0.932);
+}
+
+li:hover {
+  background-color: rgba(32, 12, 49, 0.932);
+}
+
+.active {
+  background-color: rgba(32, 12, 49, 0.932);
 }
 
 @media screen and (min-width: 900px) {
@@ -270,7 +283,8 @@ input {
 
 @media screen and (min-width: 900px) {
   #book img,
-  #inspiration img, #dessin img {
+  #inspiration img,
+  #dessin img {
     position: sticky;
     top: 0;
     background: black;
